@@ -1,0 +1,89 @@
+================================================================================
+HUMAN ACTIVITY RECOGNITION - PERFORMANCE REPORT
+================================================================================
+Generated on: 2025-10-10 12:13:07
+
+📋 MODEL CONFIGURATION:
+------------------------------
+  n_timesteps: 128
+  n_features: 9
+  n_classes: 6
+  lstm_units: 32
+  dropout_rate: 0.3
+  l2_reg: 0.001
+  batch_size: 128
+  epochs: 50
+  learning_rate: 0.001
+  validation_split: 0.2
+
+🎯 OVERALL PERFORMANCE:
+------------------------------
+  Accuracy: 0.8907 (89.07%)
+  Macro Avg Precision: 0.8906
+  Macro Avg Recall: 0.8929
+  Macro Avg F1-Score: 0.8911
+
+📊 PER-CLASS PERFORMANCE:
+------------------------------
+  WALKING:
+    Precision: 0.912
+    Recall: 0.901
+    F1-Score: 0.907
+    Support: 496
+
+  WALKING_UPSTAIRS:
+    Precision: 0.884
+    Recall: 0.877
+    F1-Score: 0.881
+    Support: 471
+
+  WALKING_DOWNSTAIRS:
+    Precision: 0.880
+    Recall: 0.979
+    F1-Score: 0.927
+    Support: 420
+
+  SITTING:
+    Precision: 0.817
+    Recall: 0.835
+    F1-Score: 0.826
+    Support: 491
+
+  STANDING:
+    Precision: 0.850
+    Recall: 0.821
+    F1-Score: 0.836
+    Support: 532
+
+  LAYING:
+    Precision: 1.000
+    Recall: 0.944
+    F1-Score: 0.971
+    Support: 537
+
+🔍 CONFIDENCE ANALYSIS:
+------------------------------
+  Overall Mean Confidence: 0.943
+  Correct Predictions Confidence: 0.957
+  Incorrect Predictions Confidence: 0.833
+
+❌ MISCLASSIFICATION ANALYSIS:
+------------------------------
+  Total Misclassified: 322
+  Misclassification Rate: 0.1093
+  Most Common Confusion Pairs:
+    STANDING -> SITTING: 92 cases
+    SITTING -> STANDING: 76 cases
+    WALKING_UPSTAIRS -> WALKING: 37 cases
+
+📈 ROC AUC SCORES:
+------------------------------
+  WALKING: 0.984
+  WALKING_UPSTAIRS: 0.991
+  WALKING_DOWNSTAIRS: 0.995
+  SITTING: 0.972
+  STANDING: 0.977
+  LAYING: 0.974
+  Macro Average: 0.982
+
+================================================================================
