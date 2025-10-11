@@ -67,7 +67,6 @@ modern-har-lstm/
 ├── evaluator.py           # 모델 평가 및 분석
 ├── main.py               # 메인 실행 스크립트
 ├── requirements.txt      # Python 의존성
-├── setup.sh             # 설정 및 실행 스크립트
 ├── README.md           # 이 파일
 ├── data/               # 데이터셋 디렉토리 (자동 생성)
 ├── results/            # 결과 및 보고서 (자동 생성)
