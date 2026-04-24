@@ -1,0 +1,5 @@
+# Backend API dependencies (on top of project requirements.txt)
+# Target env: py310_tf
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.32,<1.0
+python-multipart>=0.0.20

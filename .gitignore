@@ -150,3 +150,54 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# ──────────────────────────────────────────────────────────────────
+# Project-specific artifacts (training outputs, large datasets, etc.)
+# ──────────────────────────────────────────────────────────────────
+
+# Dataset (UCI HAR, ~270 MB when extracted; downloaded automatically)
+data/
+*.zip
+
+# Training / evaluation outputs
+results/
+visualizations/
+backend/har_training.log
+backend/*.png
+
+# Model checkpoints & TensorFlow serialization formats
+*.h5
+*.keras
+*.ckpt
+*.ckpt.*
+*.pb
+*.tflite
+saved_model/
+
+# TensorBoard / training runs
+logs/
+runs/
+*.tfevents.*
+
+# Generated figures anywhere in the repo…
+*.png
+# …but keep the README demo image tracked.
+!demo.png
+
+# ──────────────────────────────────────────────────────────────────
+# Frontend (Node / Vite)
+# ──────────────────────────────────────────────────────────────────
+# (Primary rules live in frontend/.gitignore; duplicated here as a safety net.)
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+.env.local
+.env.*.local
+
+# ──────────────────────────────────────────────────────────────────
+# OS / editor cruft
+# ──────────────────────────────────────────────────────────────────
+.DS_Store
+__MACOSX/
+Thumbs.db
